@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:default !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(download.jpg);/* THIS IS FOR THE GIF*/
+    background-repeat: no-repeat;
+    background-size: cover;        /* Make sure it covers the whole screen */
+    background-position: center;   /* Center the image */
+    /* background-attachment: fixed; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{ /*defines the main page height*/
+    width: 100%;
+    min-height: 100%;  
+    overflow: hidden;
+}
+/*for the top two buttons*/
+nav ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+nav li{
+    padding: 10px;
+}
+.strip ul{
+    list-style: none;
+    padding-left:25vw ;
+    /* padding-top: 15px;
+    padding-bottom: 70px; */
+    margin: 5px 0px;
+    
+    z-index:2;
+    position: absolute;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    
+}
+.homeRapper{
+    height: 70vh;
+    width: 52vw;
+    /* background-color: rgb(252, 254, 254); */
+    border-radius: 8px;
+    
+    backdrop-filter: blur(0px) saturate(250%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3)
+}
+.top{
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 15px;
+    border-radius: 8px 8px 0 0 ; 
+    height: 12%;
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+}
+.myname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    /* background-color: blanchedalmond; */
+    padding-top : 30px;
+    padding-bottom: 30px;
+    color: aliceblue;
+}
+#name{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#name h1{
+    font-family: 'Pirata One','Cinzel Decorative';
+    font-size:370%;
+    padding-top: 40px;
+
+}
+#name p {
+    font-size: 150%;
+}
+.iconstrip{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: chartreuse; */
+    height: 20%;
+    border-radius: 0 0 8px 8px  ; 
+}
+.iconstrip ul{
+    list-style: none;
+    display: flex;
+    /* padding-top: 40px; */
+}
+.iconstrip li{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.linkedin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.linkedin p {
+    color: aliceblue;
+}
+/*
+finaltouches*/
+nav img{
+    
+    width: 30px;
+    height: 30px;
+}
+nav video{
+    
+    width: 30px;
+    height: 30px;
+}
+/*pop ups*/
+.actionButtons {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .actionButtons:hover {
+      background-color: #555;
+    }
+
+    /* === Popup Styling === */
+    .popup {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      z-index: 1;
+      user-select: none;
+    }
+
+    .popup-header {
+      padding: 10px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close-btn {
+      cursor:default;
+      font-size: 20px;
+      line-height: 1;
+      user-select: none;
+      padding: 0 8px;
+      transition: color 0.2s;
+    }
+
+    .close-btn:hover {
+      color: #ff5555;
+    }
+
+    .popup-content {
+      flex: 1;
+      padding: 20px;
+      color: white;
+    }
+    /*at last the content stuff*/
+    .fixed-header {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 10px 20px;
+    }
+    .content{
+        padding-top: 20%;
+    }

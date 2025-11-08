@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id ="clicksound"src="clicks_1.mp3"></audio>
+    <main>
+        <nav>
+            <ul>
+                <li><img src="theme.gif" onclick="changeTheme()" alt="get better internet"id ="play-btn"></li>
+                <li><img src="music.gif" alt="Music icon more like no icon" onclick="toggleMusic()"id ="play-btn"></li>
+                
+            </ul>
+        </nav>
+        <div class="strip">
+            <ul>
+                <li><button class="actionButtons" onclick="star()">STAR</button></li>
+            </ul>
+        </div>
+        <div class="home">
+            <div class="homeRapper">
+                <div class="top">
+                   <strong style="font-family:  Helvetica,Arial, sans-serif;">Home</strong> 
+                </div>
+                
+                <div class="myname">
+                    <div id="name">
+                        <h1>Hi i'm HARSH</h1>
+                        <br>
+                        <p>Developer,</p>
+                    </div>
+                </div>
+                <div class="iconstrip">
+                    
+                    <ul>
+                        <li><button id ="play-btn"class="actionButtons" data-type="about">About</button></li>
+                        <li><button id ="play-btn"class="actionButtons" data-type="Zelda">Zelda</button></li>
+                        <li><button id ="play-btn"class="actionButtons" data-type="mail">Mail</button></li>
+                        <li><button id ="play-btn"class="actionButtons" data-type="goal">Goal</button></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="endStrip">
+            <div class="linkedin">
+                <button id="btn">Linked in logo goes here</button>
+                <p>@copyright by jarsj</p>
+            </div>
+        </div>
+         <!-- hidden display about -->
+        <div id="popup-about" class="popup-template" hidden>
+        <p> 
+            <div class="fixed-header">
+            <img src="pfp.jpg" alt="yeah" style="width: 120px;height: 120px;border-radius: 50%;margin: 2%;">
+            <div style="font-size: 200%; padding-left: 2%;"><span style ="color:green;">Harshit Aggarwal,</span>
+
+            </div>
+            </div>
+             <br>
+             <div class="content">
+             a 17-year-old front-end developer passionate about crafting clean, responsive, and engaging web experiences.<br>
+             I’m currently pursuing my higher studies at AKTU University, where I’m deepening my understanding of computer science and modern web technologies.<br>
+             I love turning ideas into interactive interfaces.<br>
+             Every project I work on is a chance to learn something new and push my creativity further — and I’m just getting started!
+             <br><br>
+             the above text was copy paste from gpt<br><br><br>
+             I wanted to make a portfolio website for my freelancing gig this site is incomplete and i don't think i'm going to continue working on this main reason being that it is a cheap copy of sharyap.com the layout is not original.
+            <br><br>
+            The reason why i decided to copy her website is cause it had such a great design, it was simple and interactive i absolutely loved the drag function and 
+            but its just mine doesnt feel like me or the type of site i envisioned.<br><br><br>
+            but i did spend like  9-10 days to make it so i will probably post this on my git.
+            </div>
+            </p>
+            </div>
+
+
+           <!-- hidden display work -->
+        <div id="popup-Zelda" class="popup-template" hidden>
+        <p>
+            I absolutely with all my heart love zelda games. <br>
+            I've played total of 5 zelda games : <br>
+            The first one i played was <strong>THE MINISH CAPE</strong> <br>
+            When i played it for the first time it blew my mind (i mean i have played lots of pokemon games but i was really small at that time and didn't really asked myself how is this game working) <br>
+            It was a really good game and this was the reason i got into the zelda franchise <br><br>
+            THE NEXT GAME WAS ,"TWILIGHT PRINCESS game cube version" <br><br>
+            IT was the <strong>best</strong> i know it got lot of hate but i loved the game and the manga was awesome and obviously the best scene was <br> when midna needed help to get back to zelda. <br>
+            i legit panicked my eys were glued to the screen 10/10.
+            <br><br><br>
+            THE NEXT IN LINE WAS ,'WIND WAKER'
+            it was cool but shifting from dark to toon didn't suit me that well great game.
+            <br><br><br>
+            THE NEXT WAS ,'breath of the wild'
+            ABSOLUTELY LOVED IT 10/10
+            <br><br>
+            LAST ONE ,'TEARS OF THE KINGDOM'
+            peak
+            <br><br><br>
+            My personal ratings are : <br><br>
+            1. TWILIGHT PRINCESS <br>
+            2. TEARS OF THE KINGDOM <br>
+            3. BREATH OF THE WILD <br>
+            4. MINISH CAPE <br>
+            5. WIND WAKETR
+
+        </p>
+        </div>
+        
+        <!-- hidden display mail -->
+        <div id="popup-mail" class="popup-template" hidden>
+        <p style="display: flex;justify-content: center;align-items: center;flex-direction: column;">This is the mail section
+            <br><br>
+            <br>
+            <img src="sharyo.png" alt="link">
+            <h3 style="color: beige;">Want to contact me? You can send me an email at<br>
+                <a style="display: flex;justify-content: center;"href="mailto:harshitaggarwal9125@gmail.com"><button style="padding: 10px;margin: 10px;border-radius: 4px;background: #f4f2f200;color: white;">send</button></a>
+                 I’d love to hear from you!</h3>
+
+        </p>
+        </div>
+        <!-- hidden diaplay goal -->
+        <div id="popup-goal" class="popup-template" hidden>
+        <p>Hi my name is harsh, the reason why i started doing front end or u can say freelancing or why i wanna start free lancing is cause i wanna buy i <strong>switch 2</strong> so that i can play tears of the kingdom in 60fps.
+            my parents arn't going to buy one for me cause they bought me the switch like 2 years ago so i thought if i start making websites for people i  could save up.
+            i would likely not use this as my actual portfolio since its a cheap copy of sharyap.com
+            <br>
+            i am going to start working on something that more like me <br>
+            At last thanks for reading this / visiting. 
+        </p>
+        </div>
+        <!--  -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
